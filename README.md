@@ -14,3 +14,4 @@ This repo is a work in progress as I learn more AI fundamentals.
 - Machine Learning
 
 - Azure AI Vision
+
