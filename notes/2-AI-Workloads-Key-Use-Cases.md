@@ -29,4 +29,10 @@ It learns from data to make predictions that enable decision making, problem sol
 
 AI is a bunch of technologies and methods that build on each other to solve problems.
 
-(/Users/jasminerios/work/Microsoft-AI-Fundamentals/Assets/AI-Comp.png)
+A lot of people think AI will help
+
+## Replace with relative path
+## Make sure it's displayed in markdown
+
+![Figure from book showing ai composition](/assets/images/ai-comp.png)
+

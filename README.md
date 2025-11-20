@@ -39,3 +39,5 @@ If you take AI-900 or other Microsoft certification is eligable for college cred
 
 - *`Constant width`*
     Used for program listings, as well as within paragraphs to refer to program elements such as variables or function names, data-bases, environment variables, statments and keywords
+
+[Markdown for Tech Writing](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#uploading-assets)
