@@ -7,11 +7,5 @@ It will include git repos, labs, notes, and other things that helped me study fo
 
 This repo is a work in progress as I learn more AI fundamentals.
 
-## Glossary
-
-- AI
-
-- Machine Learning
-
-- Azure AI Vision
+This repo was started in November 2025 and names of services might change or consolidate into others.
 

@@ -10,6 +10,8 @@
 
 - [Micrsoft Certifications Poster](https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf)
 
+- [Updates to Azure AI-900 - Microsft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900#updates-to-the-exam)
 ## Books
 
 - [Azure AI Fundamentals (AI-900) Study Guide- Tom Taulli at O'Reilly Media Online](https://learning.oreilly.com/library/view/azure-ai-fundamentals/9798341607804/)
+
