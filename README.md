@@ -28,3 +28,14 @@ If you take AI-900 or other Microsoft certification is eligable for college cred
 - [Microsoft Azure AI Fundamentals - ACE](https://www.acenet.edu/National-Guide/Pages/Course.aspx?org=Microsoft+Corporation&cid=b3c80074-4d66-f011-bec3-6045bd0a9dd8&oid=46099b28-9016-e811-810f-5065f38bf0e1)
 
 - [ACE National Guide - Microsoft Corporation](https://www.acenet.edu/National-Guide/Pages/Organization.aspx?oid=46099b28-9016-e811-810f-5065f38bf0e1&k=AI%20AND%20(NGStatusCodeOWSTEXT%3D%22Active%22))
+
+## Legend
+
+- *Italic* 
+    Indicates new terms, URLs, email addresses, filenames, and extensions
+
+- **Bold**
+    Shows commands or other text that should be typed literally by the user
+
+- *`Constant width`*
+    Used for program listings, as well as within paragraphs to refer to program elements such as variables or function names, data-bases, environment variables, statments and keywords
