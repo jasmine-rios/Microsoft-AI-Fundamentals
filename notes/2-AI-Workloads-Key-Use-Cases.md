@@ -46,8 +46,68 @@ Use cases: Recommendation systems, Fraud detection, and predictive analytics
 
 *Deep Learning* is a subset of ML that uses artifical neural networks inspired by the human brain.
 
-Kind of like... our brains 
+Kind of like... our brains ::
 
 A good example I have seen on this on the phemonmena of "The Six Degrees of Seperation" being expressed by data science.
 
 [Something Strange Happens When You Trace How Connected We Are Vertitasium - Youtube ](https://www.youtube.com/watch?v=CYlon2tvywA&pp=ygUhc2l4IGRlZ3JlZXMgb2Ygc2VwYXJhdGlvbiBzY2llbmNl)
+
+Use Cases: image recognition, speech processing, and natural language understanding.
+
+### Generative AI
+
+This is the type that every knows as ChatGPT or a chat bot.
+
+It creates new content in the form of text, images, audio, and video
+
+Use Cases: Automated content creation, image synthesis, and creative problem solving.
+
+## SO its not... alive?
+
+No...but think of it like CyberPunk 2072 where you mechanizing your character with new add ons rather than a whole cyborg.
+
+Each layer of CyberPunk 2072 works together in the background and the game gets easier the more you use your add-ons.
+
+Completing a side mission is easier with it but you might not notice side missions are easier until you un-equip it.
+
+## Content Moderation
+
+*Content Moderation* spots and filters out harmful content before it hits production/public view **actively**.
+
+Use cases: Social media, online forums/communities, or ecommerse sites
+
+### Azure AI Content Safety Studio
+
+**NOTE**
+Used to be called Azure Content Moderator and requires Azure will require users to switch to *Azure AI Content Safety Studio* by **Feburary 2027**
+
+Features of Azure Content Moderator
+    - *Text moderation*
+        Scans text for offensive content, including profanity and explicit material
+    
+    - *Image moderation*
+        Analyzes images for adult content and can detect within images using *OCR*
+    
+    - *Custom term lists*
+        Enables the creation of custom lists to filter specific terms according to content policies
+
+    - *Video moderation*
+        Evaluates videos for adult content, providing time markers for identified material
+
+Here are the main features of Azure AI Content Safety Studio:
+    
+    - Moderate text content
+        Test content easily with whatever size dataset. It's got a GUI to run tests and results. You can adjust sensitivity levels, set content filters, and manage blocklists to make sure your moderation system is just right for your needs.
+    - Prompt shields
+        This feature evaluates text to identify potential risks to LLMs from user input attacks
+    - Groundedness detection
+        Accesses if AI-gen text response text responses actual and factual
+    - Protected material detection
+        Identify custom content categories for personalized moderation.
+    - Custom categories API
+        Enables create and train of custom categories for personalized moderation 
+    - Analyze text and image APIs
+        
+    - Template and workflows
+
+
