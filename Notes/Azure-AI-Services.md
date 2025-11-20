@@ -21,8 +21,12 @@ This file is based off of chapter 1-2 from Tom Taulli's book.
 - NLP Workloads on Azure (15-20%)
     - Identify features of common NLP Workload Scenarios (key phrase extraction, entity recognition, sentiment analysis, language modeling, speech recognition and synthesis, and translation)
 
+    - Identify Azure tools and services for NLP workloads (Descrive capabilities of Azure AI Language service and Azure AI Speech service)
 
 - Generative AI Workloads on Azure (15-20%)
+    - Identify features of generative AI solutions (generative AI models, common scenarios for generative AI, and responsible AI considerations for generative AI)
+
+    - Identify generative AI services and capabilities in Microsoft Azure (AI Foundry, Azure OpenAI service, Azure AI Foundry model catalog)
 
 ## Azure AI Services
 
