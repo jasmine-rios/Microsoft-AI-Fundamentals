@@ -47,3 +47,7 @@
 - [Artificial Intelligence and Machine Learning Hub - Microsoft Tech Community](https://techcommunity.microsoft.com/category/azure-ai-foundry)
 
 - [The AI Show - Video Episodes](https://learn.microsoft.com/en-us/shows/ai-show/)
+
+- [VsCode Markdown Documentation](https://code.visualstudio.com/docs/languages/markdown)
+
+- [Markdown Basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
