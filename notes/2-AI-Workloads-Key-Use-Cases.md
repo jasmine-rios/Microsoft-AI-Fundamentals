@@ -167,3 +167,4 @@ Azure AI Vision also supports *digital asset management (DAM)*, whic helps you *
 
 ## Natural Language Processing (NLP)
 
+Natural language processing (NLP) is a technology that helps
