@@ -167,4 +167,84 @@ Azure AI Vision also supports *digital asset management (DAM)*, whic helps you *
 
 ## Natural Language Processing (NLP)
 
-Natural language processing (NLP) is a technology that helps
+*Natural language processing (NLP)* is a technology that helps machines **understand and respond to human launguage**.
+
+At its core, NLP breaks down human language-- spoken or written -- into something machines can understand.
+
+Computers don't just recognize words, but can also **figure out intent behind full sentences or paragraphs**.
+
+You use this when talking to Siri if you have an iPhone or using chat bots to get help online.
+
+One of NLP's biggest jobs is making sense of the messy, unstructured way that humans communicate (e.g. slang).
+
+Machines are used to structured data and NLP bridges that gap.
+
+It also does grammer and context to respond more naturally.
+
+NLP is behind a lot of the AI-powered technology we use today.
+
+NLP gets the meaning (e.g. "What's the weather like"; picks out "weather" and "like" and processes whole sentence to understand you are asking for a forecast)
+
+This deeper understanding, called *semantics*, is what makes NLP different from basic text matching. 
+
+It's what helps AI generate responses that feel more human and natural.
+
+*Azure AI Language* let's you work with NLP. It combines three tools under one roof and adds new features:
+
+- Text analytics
+- QnA Maker
+- LUIS (Language Understanding)
+
+These features listed above come in two flavors: 
+
+- Preconfigured (Use AI models as-is without tweaking anything)
+
+- Customizable (Train the model with your own data)
+
+Here is things you can do with Azure AI Language:
+
+- *Named entity recognition (NER)*
+    Automatically **tags** words or phraces into **catergories** like people. places, dates, etc.
+
+- *Personally identifying Information (PII) detection*
+    **Finds sensitive data** such as phone numbers or ID numbers, and **hides it**.
+
+- Language detection
+    Figures out **what language a document is written in and returns a code for it**.
+
+- Sentiment analysis and opinion mining
+    Analyzes text to determine if it's **postive or negative**.
+
+- Summarization
+    **Pulls key sentences from a document** to create a summary.
+
+- Key Phrase extraction
+    Identifies the **main idea** in the text.
+
+- Entity linking
+    **Inserts links from words** or phrases in the text to their **cooresponding Wikipedia pages**, helping to improve clarity.
+
+- *Custom text classification*
+    Lets you  **train an AI** model to categorize documents based on your **own categories**.
+
+- *Custom NER*
+    Allows you to train a model to **identify custom labels in your text**
+
+- *Conversational Language Understanding (CLU)*
+    Builds custom models that **understand and extract valuable info from user messages**.
+
+- *Question answering*
+    Provides the **best answer to user questions**, which is ideal for chatbots and voice-enabled apps.
+
+## Knowledge Mining
+
+Knowledge mining uses AI to interpret vast amounts of data. Often, the focus is on *unstructured data*, which is information that lacks a predefined format, such as text documents, email, texts, images and videos.
+
+In contrast, *structured data* is organized in a standard format, typically in tables with rows and columns, making it **searchable and analyzable**.
+
+The process for knowledgeme mining is farely simple, you gather your data, enhance it with AI tools like language or image recognition, and then explore it through search and visualizations. This way, you can quickly find the connections you need to make better decisions.
+
+Microosft has developed *Azure AI Knowledge Mining* to make this procress easier. It **combines AI, ML, and seach technology** to help you extract, enrich, and explore your data. Here are some key features:
+    
+- Cognitive skills
+    Prebuilt AI models that automatically extract and structure information from text, images, and other media. For example, they can pull texy from scanned documents, detect different languages, extract key phrases, and identify objects in images.
