@@ -120,5 +120,3 @@ Developers can use Azure Foundary to create AI apps using the latest API and mod
 4. Once setup, click "*Go to resource*" then click "*Go to Vision Studio*".
 
 5. Upload from your computer or choose a sample image. The AI will take that image and use *Computer Vision* to generate a caption.
-
-##
