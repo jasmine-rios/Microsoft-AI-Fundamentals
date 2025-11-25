@@ -51,3 +51,10 @@
 - [VsCode Markdown Documentation](https://code.visualstudio.com/docs/languages/markdown)
 
 - [Markdown Basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
+
+- [The AI Revolution: The Road to Superintelligence - Tim Urban - Waitbutwhy.com](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html)
+
+- ["‘If Anyone Builds It, Everyone Dies’ Is the New Gospel of AI Doom" - FrewdWoad [r/Futurology]- Reddit Comment](https://www.reddit.com/r/Futurology/comments/1nylz3g/if_anyone_builds_it_everyone_dies_is_the_new/)
+
+# WIP
+- []()

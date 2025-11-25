@@ -2,6 +2,10 @@
 **NOTE**
 This file is based off of chapter 1-2 from Tom Taulli's book.
 
+Most of all, it is summarized and quotated with other resources listed in `resources.md`
+
+!()[/asset]
+assets/images/ai-architecture-pitfalls.png
 ## Exam Topics Weigh Scale
 
 - AI Workloads and Considerations (15-20%)
