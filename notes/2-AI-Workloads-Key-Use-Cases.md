@@ -247,4 +247,82 @@ The process for knowledgeme mining is farely simple, you gather your data, enhan
 Microosft has developed *Azure AI Knowledge Mining* to make this procress easier. It **combines AI, ML, and seach technology** to help you extract, enrich, and explore your data. Here are some key features:
     
 - Cognitive skills
-    Prebuilt AI models that automatically extract and structure information from text, images, and other media. For example, they can pull texy from scanned documents, detect different languages, extract key phrases, and identify objects in images.
+    These are **Prebuilt AI** models that **automatically extract and structure information from text, images, and other media**. For example, they can pull texy from scanned documents, detect different languages, extract key phrases, and identify objects in images.
+
+- Enrichment
+    Knowledge mining goes beyond just keyword searching by enhancing your data. It can categorize information, pull out entities like names or locations, and translate text.
+    Plus you can build your own AI models to add custom enrichments based on your specific needs.
+
+- Customizable indexing
+    This tool helps you create a **searchable index of your data**, mkaing it easy for users to find relevant information quickly. You can also **customize how the index is built to fit your particular use case**
+
+- Integration with Azure search
+    Knowledge mining works hand-in-hand with the **Azure Cognitive Search** serive, which is a search-as-a-service solution. This means you can easily **scale your search capabilities and manage queries across enriched data** without breaking a sweat.
+
+## Document Intelligence
+
+*Document intelligence* also referred to as *document AI*, uses AI to automate the **extraction, comprehension, and organization of data** from various documents, such as **forms, invoices, and receipts**. 
+
+This technology **transforms unstructured information into structured, actionable data**, improving efficiency and accuracy in data processing.
+
+## Document Intelligence V. Knowledge Mining
+
+Easy to confuse with knowledge mining but is focused on the extraction and structuring data from documents to automate data entry/processing
+
+Knowledge mining is more for analyzing large volumes of data to make patterns, relationships, and insights across the whole datascape.
+
+Both use AI to process data but document intelligence is at the **document level**
+and **knowledge mining works at a broader l,cross-document level** to facilitate comprehensice data exploration and discovery.
+
+## Azure AI Document Intelligence service
+
+The main features of *Azure AI Document Intelligence* service:
+
+- General extraction models
+    These models are designed to **work across a wide range of documents without needing customization**. They can pull out key details like text, tables, **key-value pairs**, and the **overall structure** of a document.
+    This makes them good for organizations that handle various types of documents and need consistent data extraction.
+    Whether the document is structured, semi-structured, or unstructured, these models provide quick, reliable results without needing any training or labeling.
+
+- Prebuilt models
+
+    Azure also provides **ready-to-use models** for **common document types**, such as invoices, receipts, identity documents, and tax forms. These models are preconfigured to extract specific data fields like dates, payment amounts, or personal details. For example, the prebuilt models can handle W-2 forms and include support for other documents, such as 1099 tax forms and health insurance cards
+
+- Custom models
+    If you have more specific needs, Azure lets you create cusom models tailored to your business. You can train these models using your own data, so they know exactly what information to look for in your documents.
+
+    Azure offers two type of custom models: **template models**, which are great if your documents follow a similar structure, and **neural models**, which are flexible enough to handle documents with different layouts.
+
+## Generative AI
+
+*Azure OpenAI Service* **provides developers with a comprehensive toolkit to create generative AI applications that can transform various buisness operations**.
+
+It allows for the development of custom AI copliots and agents, giving companies the flexiblility to **integrate AI into their workflows**. One of the standout features is its support for different AI models, such as **GPT-4o, GPT-Turbo, embeddings, and Wisper**.
+
+The **Azure OpenAI studio**, which serves as the **main user inferface** simplifies the management and customization of these models.
+Users can explore, fine-tune, and deploy models directly from the studio. This makes it an **assessible solution for both technical and nontechnical users**.
+
+Azure OpenAI supports advanced capabilies, such as *retrival augmented generation (RAG)*. This technique allows developers to run models on specific datasets, providing more accurate and contextually grounded outputs.
+For organizations looking to automate knowledge-based tasks, this feature enchances AI's ability to generate precise responses based on their proprietary information.
+
+For example, a company can **implement RAG by integrating Azure OpenAI Service with Azure AI Search to create a chatbot**that answers employee questions about internal policies, like health benefits.
+By indexing company documents and using RAG, the AI can retrive relevant information and provide accurate, **context-specific responses** to employee inquiries.
+
+In the creative domain, Azure OpenAI models like **DALL-E open new doors for content generation**.
+This allows designers and marketers to **produce unique visuals from simple text prompts**. The technology has been particularly impactful in media and entertainment, where quick, dynamic creation is crucial to keeping up with customer demand.
+
+The test will be centered on differences betwen services
+
+## Guiding Prinicipals for Responsible AI
+
+AI is an awesome and makes life easier but comes with risks.
+
+One of the big risks is *bias* in AI models which can lead to **unfair results**. 
+For example, a loan-approval system that discriminates based on gender because it was trained on biased data.
+This can have serious consequences such as **inequalities, damage of trust in AI systems, and legal or regulatory repercussions for business**.
+
+The other risks are:
+
+- Potential for errors, such as autonomous vehicle malfunctions, that could cause accidents.
+
+- Concerns about how AI uses data, especially sensitive information like patient data in medical bots, which could be exposed if not securely stored.
+
