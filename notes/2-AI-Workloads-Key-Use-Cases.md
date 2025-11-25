@@ -322,7 +322,38 @@ This can have serious consequences such as **inequalities, damage of trust in AI
 
 The other risks are:
 
-- Potential for errors, such as autonomous vehicle malfunctions, that could cause accidents.
+- **Potential for errors**, such as autonomous vehicle malfunctions, that could cause accidents.
 
-- Concerns about how AI uses data, especially sensitive information like patient data in medical bots, which could be exposed if not securely stored.
+- Concerns about **how AI uses data**, especially sensitive information like patient data in medical bots, which could be exposed if not securely stored.
 
+- AI solutions that **may not be inclusive to all users**, such as a home assistant without audio output that excludes visually impared users.
+
+- **Accountability concerns** in AI decision making, such as wrongful convictions **due to faulty facial recognition**.
+
+To address these challenges, Microsoft has created 6 guiding principles for *responsible AI*, which fall into 2 main categories
+
+- Ethical AI
+    Ensures that AI systems are designed and used in a way that aligns with moral principals like accountability, transparency, security. and privacy.
+
+- Explainable AI
+    Focuses on making AI systems transparent and easy to understand; includes principals like fairness, transparency, security, and privacy.
+
+Microsoft's 6 guidelines are common for questions on the exam, so you should memorize them and understand how they apply to different scenarios.
+
+## Accountability
+
+When you are designing and deploying AI systems, the **responsiblity lies with you to ensure it operates ethically and safely**.
+You need to make sure the technology **aligns with both legal and industry standards** --essentially you make sure it's fair, responsible, and trustworthy.
+Take Microsoft's approach: **creating a framework that prioritizes accountability, starting with impact assessments early on**.
+These assessments look at **how AI might afffect individuals, organizations, and society**.
+By keeping a close eye on these evaluations, especially when something could go wrong, you can **manage risks throughout the AI's lifespan**.
+
+But accountability doesn't end with the launch. Microsoft advocates for **human oversight, making sure that AI doesn't run the show without meaningful human input**.
+The people managing these systems need the right tools to maintain control and step in when necessary. **This keeps you from becoming overly reliable on AI outputs-- ensuring that human accountability is always part of the equation -- especially in more complex or high-stakes situations**
+
+To keep things in check, **it's essential to set up internal review teams**. These teams can oversee key decisions realted to **AI development and deployment, particularly in sensitive areas like health care, employment, or facial recognition**.
+If misused, these tools can potentially cause physical or emotional harm or infringe on people's rights.
+It's important to have clear legal boundaries to prevent overreach and protect individual freedoms.
+
+**Laws and regulation play a huge role in maintaing AI accountability**, but only part of the puzzle. Businesses, governments, and other stakeholders also have to rake responsibility. 
+Microsoft, for instance, has developed its own guiding principals for working with sensitive tech like facial recognition.
