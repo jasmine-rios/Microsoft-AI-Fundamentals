@@ -33,7 +33,7 @@ AI is a bunch of technologies and methods that build on each other to solve prob
 
 A lot of people think AI uses it's knowledge to minic us and take over. It's not the use case of actual AI.
 
-It simply mimics human intelligence to help developers/engineers with problem solving, decision making, language understanding, and pattern recognition **intelligently** used on humans guiding them.
+**It simply mimics human intelligence to help developers/engineers with problem solving, decision making, language understanding, and pattern recognition intelligently** used on humans guiding them.
 
 ### Machine Learning (ML)
 *Machine Learning (ML)* is under AI and allows machines to learn from data patterns.
@@ -355,5 +355,25 @@ To keep things in check, **it's essential to set up internal review teams**. The
 If misused, these tools can potentially cause physical or emotional harm or infringe on people's rights.
 It's important to have clear legal boundaries to prevent overreach and protect individual freedoms.
 
-**Laws and regulation play a huge role in maintaing AI accountability**, but only part of the puzzle. Businesses, governments, and other stakeholders also have to rake responsibility. 
+**Laws and regulation play a huge role in maintaing AI accountability**, but only part of the puzzle.
+Businesses, governments, and other stakeholders also have to rake responsibility. 
 Microsoft, for instance, has developed its own guiding principals for working with sensitive tech like facial recognition.
+Microsoft knows that these principles will evolve as it learns from working with customers, academics, and civil society.
+This kind of open conversation--among companies, governments, nongovernmental organizations, and researchers -- is critical to making sure that AI evolves responsibly.
+It's also important to keep your team trained, **being in experts for big decisions**, and have a solid governance system in place to ensure you're maintaining accountability.
+
+## Inclusiveness
+
+Creating AI that works for everyone starts with making sure it's accessible, no matter a person's abilities. Tools like speech-to-text and text-to-speech are especially helpful for those hearing or vision impairments.
+By including these features, you can make sure that nobody misses out on the benefits that AI has to offer.
+
+But accessibility isn't just about the technology-- **it's about the people who create it**.
+Having **diverse teams**, which members from various backgrounds and life experiences, is key to developing AI that truly works for everyone.
+When you bring diffferent perspectives into the conversation, **you're better equiped to spot biases and ensure AI is designed to be fair and inclusive**.
+*Inclusive design* is about **creating AI systems that are usable by as many people as possible**.
+This is especially true for those **traditionally excluded** due to factors like **ability, language, culture, gender, or age**.
+By embracing inclusive design, developers can identify and tackle barriers that might otherwise leave people out. This paves the way for better experiences for all users.
+
+It's equally important to involve the communities that AI is meant to serve. Partnering with organizations and adovocacy groups ensures that underrespresented voices are heard.
+This makes AI more responsive to their specific needs.
+Using widely recognized accessibility standards also helps ensure that AI systems are genuinely inclusive
