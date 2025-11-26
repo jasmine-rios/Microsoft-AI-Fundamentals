@@ -2,6 +2,8 @@
 
 This file is based off of chapter 3 from Tom Taulli's book.
 
+![AI Mechanized for Leaders - Facebook Group User for "IT memes"](/assets/images/ai-leader.jpeg)
+
 The building blocks of powering AI:
 
 - Content Moderation
@@ -376,4 +378,67 @@ By embracing inclusive design, developers can identify and tackle barriers that 
 
 It's equally important to involve the communities that AI is meant to serve. Partnering with organizations and adovocacy groups ensures that underrespresented voices are heard.
 This makes AI more responsive to their specific needs.
-Using widely recognized accessibility standards also helps ensure that AI systems are genuinely inclusive
+Using widely recognized accessibility standards also helps ensure that AI systems are genuinely inclusive.
+
+## Reliability and Safety
+
+For AI systems to earn your trust, they need to work reliably, safely, and consistantly--even when things don't go as planned. AI should do what is's designed to do, **handle the unexpected without failing, and resist any attempts to manipulate it in harmful ways**.
+Verifying how AI behaves in real-world situations is key since this shows whether developers prepared for a wide range of scenarios during the design and testing process.
+
+A big part of development is testing the AI throughly to make sure it can **handle edge cases and surprises safely, without unexpected glitches**. But it doesn't stop there.
+Once deployed, **AI systems need ongoing maintenance and protection. If left unchecked, they can degrade over time and become unreliable or inaccurate**.
+
+Human judgement is also critical in making sure AI stays on track. Since **AI is meant to boost human capabilites**, it's up to people to decide when and how to use these systems and whether they should keep using them.
+This kind of **human oversight helps reveal blind spots and biases** that might otherwise go **unnoticed**.
+
+To boost reliability and safety, **start by understanding where you AI stands in terms of maturity**. **Regularly audit the system, design it to handle the unexpected, and make sure you're involving experts in its development**.
+Thorough testing, clear explanations of how the syste, works, and ways for **users to give feedback**.
+
+## Fairness
+
+AI systems must ensure *fairness*, **meaning they treat everyone equally**.
+For example, if AI is helping make decisions about medical treatments, loan approvals, or hiring, it should give the same recommendations for people with similar health conditions, financial backgrounds, or qualifications.
+Fairness means AI shouldn't introduce or amplify biases that unfairly benefit or harm certain groups.
+
+To tackle bias, you first need to recognize that **AI's predictions and recommendations have limits**. While AI offers helpful insights, **humans are ultimately responsible for making decisions that affect people's lives**. That's why it's **important to train people to understand AI outputs** correctly and use their own judgement to avoid unfair consequences.
+
+Developers play a major role in preventing bias during the AI development process. They need to be aware of how bias can creep in during the design phase and how it might affect the system's recommendations.
+One way to minimize bias is by using **diverse training datasets**. For instance, and AI tool designed to screen job **applications might start to favor male candidates if it's trained on biased data from a male-dominated field**.
+("Very scary 😰" -Jasmine)
+By auditing the AI model before it's deployed, deelopers can catch and fix these biases early on.
+
+## Transparency
+
+A key principle that keeps AI sysems working effectively is *transparency*. When AI is involved in decisions that significantly affect people's lives, **it's crucial that those who are affected understand how these decisions are being made**.
+A big part of transparency is *intelligibility* or *explainability*, meaning that you should be **able to clearly explain how the AI system behave**. 
+To improve this, you need to ensure that people can easily **grasp how these systems work so they can identify any potential issues**--whether it's about **performance, safety, privacy, bias, or unexpected outcomes**.
+Plus, organizations using AI need to be upfront about when they're using these systems, why they're using these systems, and how they're making decisions.
+
+Here are a few ways to boost transparency:
+
+- Share key **details about the datasets used**
+- Make AI models easier to understand by **using simplier ones and explaning how they work**
+- **Train your team to properly interpret AI outputs so they can spot issues and make informed decisions**
+
+## Security and Privacy
+
+As AI becomes more common, safeguarding privacy and securing personal and business data have become more critical and complicated.
+AI systems need access to data to make accurate predictions and decisions, but this raises important concerns about privacy and data security.
+These systems must **follow privacy laws that require transparency in how data is collected, used, and stored while giving consumers control over their own information**.
+
+i.e. Microsoft's Tay chatbot on twitter learned user interactions to minic human converstation. 
+Users abused the AI model by feeding offensive and hateful speech within 24 hours after publicly avaliable.
+
+You need to be able to prepare for new types of attacks-- especially those that manipulate AI learning datasets. To prevent future incidents, advanced content-filtering tools and more oversight was used for AI system that learned automatically.
+
+To ensure security and privacy in AI, organizations should follow a few key practices:
+
+- Comply with data protection and privacy laws
+- Design systems to protect against bad actors.
+- Give customers control over their data.
+- Ensure the anonymity and integrity of personal information.
+- Conduct regular security and privacy reviews.
+- Keep up with industry best practices.
+
+![Table from book showing AI principals and their description and Key actions](/assets/images/guiding-prinicpals-for-responsible-AI.png)
+
