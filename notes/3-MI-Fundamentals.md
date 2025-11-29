@@ -174,4 +174,33 @@ Iterate and improve
 
 Let's take a look at a more detailed example to better understand how regression analysis works.
 For this example, we won't cover every step outlined in the previous section.
+When it comes to the exam, such in-depth detail about regression analysis isn't necessary.
+Instead, we'll focus on the main phases.
 
+In our example, we'll **predict a numeric label (y) based on a single feature (x)**. 
+While most real-world applications involve multiple features, starting with just one keeps things simple and allows us to focus on the core idea.
+
+Let's consider the example of predicting concert ticket prices based on the popularity of the performing artist. 
+Here, the **popularity score** is derived from survey data collected bt fans, representing a **value on a scale from 1 to 100**.
+This **score serves as our feature** while the **ticket price for the artist's concert is the label we aim to predict**.
+To build this prediction model, we'll **use historical data that pairs popularity scores (x) with their corresponding tikcet prices (y) from past concerts**.
+
+# INSERT TABLE
+
+Next, we will split the data and use a portion of it to train the model.
+In this case, the data was split randomly to ensure a  balanced representation of the dataset.
+
+## INSERT TABLE of data selected for training.
+
+While random spliting is common approach, there are other methpds that can be used based on the scenario:
+
+*Stratified splitting*
+    Ensures that specific proportions of key features (like popularity ranges) are maintained in both training and testing sets.
+
+*Time-based splitting*
+    Used when the data has a chronological order, such as time-series data, where older data is used for training and newer data for testing
+
+*K-fold cross-validation*
+    Splits the data into mulltiple folds, where each subset takes a turn as the test set while the others are used for training
+
+To get a better understanding of how popularity scores (x)
