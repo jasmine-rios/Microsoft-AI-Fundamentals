@@ -56,6 +56,15 @@ Each data point in the traning dataset is made up of two essential components
 A dataset in table form is organized into **rows and columns**, as you would see in a spreadsheet or database.
 Each **row represents an individual record or entry**, and each **column contains specific attributes or features of the data**.
 This structure allows for easy comparison and analysis of data across multiple entries by s**yncing similar information in a consistant format**.
+## INSERT 
+
+| Customer_ID | Purchase_Date | Product_Category | Rating | Feedback_Comments | Return_Request
+|---|---|---|
+| 001 | 2024-10-01 | Electronics | 5 | "Great product, fast delivery!" | No
+| 002 | Row 2, Col 2 | Row 2, Col 3 | Row 2, Col 4 | Row 2, Col 5 | Row 2, Col 6 |
+| 003 | Row 3, Col 3 | Row 3, Col 3 | Row 3, Col 4 | Row 3, Col 5 | Row 3, Col 6 |
+| 004 | Row 4, Col 2 | Row 4, Col 3 | Row 4, Col 4 | Row 4, Col 5 | Row 4, Col 6 |
+| 005 | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 | Row 5, Col 6 |
 
 Data is often messy and incomplete. These imperfections can disort results, lead to inaccuracies, and complicate decision making.
 
