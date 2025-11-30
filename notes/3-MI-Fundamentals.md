@@ -230,4 +230,87 @@ We can then plot these values on a chart.
 The orginial data points capture the historical trend while the test datat highlights how closely the model's predictions align with actual ticket prices.
 The chart makes it easy to visualize where the model performed well and where deviations occured, particularly by comparing the actual and predicted ticket prices across different levels of artist popularity.
 
-In this case, the model performed fairly well. For midrange
+In this case, the model performed fairly well.
+For midrange popularity scores, the predicted values are close to the actual values, indicating minimal error.
+However, at the lower (35) and higer (90) ends of the popularity scale, the model's predictions underestimate the actual ticket prices.
+While the performance is promising, the noticable deviations at these extremes suggest the model could benefit from additional fine-tuning to improve accuracy, especially for edge cases.
+
+### Evaluation Metrics for Regression Models
+
+When it comes to measuring **how well your regression model performs,** there are a few handy metrics based on the differences between your predicted values and actual ones.
+
+#### Mean absolute error
+
+Imagine you're **predicting how many pizzas a group of friends will eat at your party**.
+*Mean absolute error (MAE)* helps you figure out,  **on average, how far off your predictions were**--whether you guessed too high or too low.
+For instance, if you **predicted 4 pizzas but your friends ate 7, you missed by 3**.
+**MAE ignores whether the difference is positive or negative**, os it treats **both -3 and +3 as a difference of 3**.
+If your absolute errors for a set of predictions were 1,2, 3, and 4 pizzas, the **MAE would simply be the average of those numbers: 2.5 pizzas**.
+
+#### Mean Squared error
+
+Sometimes, you want to **give more weight to bigger errors**.
+After all, consistently being off by 1 pizza isn't as bad as being widly off by five.
+That's where *mean squared error (MSE)* comes in.
+Instead of just taking the differences as they are, you **square each error (making bigger mistakes stand out)**, and z88then averagez88 those squared values.
+In our pizza example, if your errors were 1, 2, 3, and 4, squaring them gives you **1, 4, 9, and 16**.
+The MSE would then be the **average of these squared errors: 7.5**.
+
+#### Root mean squared error
+
+While MSE is useful, **those squared numbers don't match up with the original quantities you were measuring**, so they can feel a little abstract.
+If you want the **error back in terms of pizzas** (or whatever you're predicting), you can **take the square root of the MSE**.
+That's called the *root mean squared error (RMSE)*.
+In this case, the **square root of 7.6 is about 2.74, meaning your average error is around 2.74 pizzas**.
+
+#### Coefficent of determination
+
+What if you want to **understand how well your model explains the variation in your data**?
+Enter R², also called the *coefficent of determination*.
+This metric tells you how much of the **difference between actual and predicted values your model accounts for**.
+
+For example, if you're trying to predict how many cupcakes a bakery sells each day, **R² tells you how much your model can explain**.  
+If your **R² value is 0.85**, that means **your model explains 85% of the variation in cupcake sales**--the **rest might be due to some unexpected cupcake-related event, like a new bakery opening next door.**
+R² ranges from 0 to 1, the closer it is to **1, the better your model fits the data.**
+
+All of these metrics are certainly helpful. But in real-world scenarios, ML isn't a one-shot deal. Data scientists typically train models over and over, tweaking different aspects to improve performance. Here's what they adjust:
+
+- Feature selection and preparation
+    You can **choose which factors or features to include** in the model and **how to tweak them for better results**.
+    For instance, maybe you realize that **cupcake sales don't depend just on wheather but also on nearby events**.
+
+- Algorithm selection
+    There is **more than one way to predict the number of cupcakes sold**.
+    While **one algoritm might focus on simple linear relationships, another might use more complex patterns**.
+
+- Algorithm parameters
+    These are the **settings you adjust to fine-tune your algorithm**.
+    Think of them like **dials on an oven.**
+    If your cupcakes are coming out **undercooked, you tweak the temperature** (or in ML, the *hyperparameters*) to get better results.
+
+After several rounds of this iterative process, you'll settle on the version of the model that performs best for your specific problem.
+
+## INSERT TABLE 4-5
+
+## Classification
+
+Classification in ML is a supervised learning task where the goal is to predict the category or class to which a given data point belongs.
+It involves training a model on labeled data where the label is categorical, such as "yes" or "no".
+The model learns the relationship between input features and output classes, enabling it to assign new, unseen data points to one of the predefined categories.
+
+There are various types of classification techniques. In the next few sections, we'll take a look at binary and multiclass classification
+
+### Binary Classification
+
+*Binary classfication* is one of the **most common types of classification tasks**.
+As its core, it's about **predicting one of two possible outcomes**. When you feed your model data, the goal is to get it to **categorize new information into one of two buckets, often labeled as 0 and 1.**
+For example, if you're building a model to predict whether an email is spam or not, binary classification is your go-to technique.
+**Each email gets analyzed, and the model spits out a prediction: "spam" or "not spam".**
+
+What makes binary classification different from something like regression is that **you aren't predicting a continous values**, like a temperature or a sales figure.
+Instead, **you're focused on making a choice between two discrete options**.
+The **model looks at the features of the data** you provide, such as email content, and it uses that to **assign a probability**.
+Based on this probability, it then makes a final classification.
+
+Let's walk through a simple example to show how binary classification works.
+Imagine we want to predict whether a person will default on a loan using one feature: their credit score
