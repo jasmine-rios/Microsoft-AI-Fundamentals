@@ -187,20 +187,47 @@ To build this prediction model, we'll **use historical data that pairs popularit
 
 # INSERT TABLE
 
-Next, we will split the data and use a portion of it to train the model.
-In this case, the data was split randomly to ensure a  balanced representation of the dataset.
+Next, we will **split the data** and use a portion of it **to train the model**.
+In this case, the data was **split randomly to ensure a  balanced representation of the dataset**.
 
 ## INSERT TABLE of data selected for training.
 
-While random spliting is common approach, there are other methpds that can be used based on the scenario:
+While random spliting is common approach, **there are other methods that can be used based on the scenario**:
 
 *Stratified splitting*
-    Ensures that specific proportions of key features (like popularity ranges) are maintained in both training and testing sets.
+    Ensures that **specific proportions of key features** (like popularity ranges) are **maintained in both training and testing sets**.
 
 *Time-based splitting*
-    Used when the data has a chronological order, such as time-series data, where older data is used for training and newer data for testing
+    Used when the data has a **chronological order**, such as time-series data, where **older data is used for training and newer data for testing**.
 
 *K-fold cross-validation*
-    Splits the data into mulltiple folds, where each subset takes a turn as the test set while the others are used for training
+    **Splits the data into multiple folds**, where each subset **takes a turn as the test set** while the others are used for training
 
-To get a better understanding of how popularity scores (x)
+To get a better understanding of how popularity scores (x) and ticket prices (y) relate to each other, **we can plot these values on a graph**.
+By plotting these points you can start to see the relationship between the two--typically, as the popularity increases, so does the ticket price.
+
+![Scatter plot from book](/assets/images/ML-scatter-plot.png/)
+
+With the training dataset, we're ready to apply an algorithm that can model the relationship between artist popularity and ticket price. 
+We'll use the **linear regression formula**, which essentially finds the **best-fit line through the points** that minimizes the distance between the line and the actual data points.
+This line represents a function where the slope tells you how much the ticket price will increase with each increase in the artist's popularity.
+
+![Scatter plot with linear regression line figure from book](/assets/images/linear-regression-line.png)
+
+Let's say an artist has a popularity score of 77.
+By applying the equation derived from the linear regression line, we can estimate the corresponding ticket price.
+In this case, the price would be something like $120 based on the trend we've established.
+
+The next step is to **evaluate the accuracy of this regression model**.
+Using the **training dataset**, we can **predict the ticket prices for each artist's popularity score**.
+
+## INSERT TABLE of predicted ticket price
+
+We can then plot these values on a chart.
+
+![The orginal dataset with actual and predicted ticket prices for test data from the book](/assets/images/ML-predict-vs-actual.png)
+
+The orginial data points capture the historical trend while the test datat highlights how closely the model's predictions align with actual ticket prices.
+The chart makes it easy to visualize where the model performed well and where deviations occured, particularly by comparing the actual and predicted ticket prices across different levels of artist popularity.
+
+In this case, the model performed fairly well. For midrange
