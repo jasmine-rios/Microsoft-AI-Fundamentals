@@ -296,6 +296,8 @@ The main features of *Azure AI Document Intelligence* service:
 
 ## Generative AI
 
+![AI is not your therapist sorry lol](/assets/images/memes/sorry-use-ai-4-that.jpeg)
+
 *Azure OpenAI Service* **provides developers with a comprehensive toolkit to create generative AI applications that can transform various buisness operations**.
 
 It allows for the development of custom AI copliots and agents, giving companies the flexiblility to **integrate AI into their workflows**. One of the standout features is its support for different AI models, such as **GPT-4o, GPT-Turbo, embeddings, and Wisper**.
