@@ -1,5 +1,7 @@
 # Resources
 
+![](/assets/images/memes/AI-is-incredible.jpeg)
+
 ## Links Used to Create Notes
 
 - [Microsoft AI Fundamentals Certification Page (AI-900) - Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl)

@@ -1,9 +1,12 @@
 # Microsoft-AI-Fundamentals
+
+![Clippy is the real issue](/assets/images/memes/the-real-enemy.jpeg)
+
 Repo for study notes for Microsoft AI Fundamentals exam
 
 It will include git repos, labs, notes, and other things that helped me study for Microsoft AI fundamentals
 
-## WIP Indefinately
+## WIP Indefinately (for now...)
 
 This repo is a work in progress as I learn more AI fundamentals.
 
@@ -37,7 +40,4 @@ If you take AI-900 or other Microsoft certification is eligable for college cred
 - **Bold**
     Shows commands or other text that should be typed literally by the user
 
-- *`Constant width`*
-    Used for program listings, as well as within paragraphs to refer to program elements such as variables or function names, data-bases, environment variables, statments and keywords
-
-[Markdown for Tech Writing](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#uploading-assets)
+- [Markdown for Tech Writing](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#uploading-assets)

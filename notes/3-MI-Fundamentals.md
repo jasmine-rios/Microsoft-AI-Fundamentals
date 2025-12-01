@@ -346,6 +346,9 @@ There are various types of classification techniques. In the next few sections, 
 
 *Binary classfication* is one of the **most common types of classification tasks**.
 As its core, it's about **predicting one of two possible outcomes**. When you feed your model data, the goal is to get it to **categorize new information into one of two buckets, often labeled as 0 and 1.**
+
+![Careful how the data slides down the pipeline](/assets/images/memes/over-fitting-or-no-fitting.jpeg)
+
 For example, if you're building a model to predict whether an email is spam or not, binary classification is your go-to technique.
 **Each email gets analyzed, and the model spits out a prediction: "spam" or "not spam".**
 
