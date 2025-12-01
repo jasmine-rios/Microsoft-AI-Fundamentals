@@ -56,15 +56,14 @@ Each data point in the traning dataset is made up of two essential components
 A dataset in table form is organized into **rows and columns**, as you would see in a spreadsheet or database.
 Each **row represents an individual record or entry**, and each **column contains specific attributes or features of the data**.
 This structure allows for easy comparison and analysis of data across multiple entries by s**yncing similar information in a consistant format**.
-## INSERT 
 
 | Customer_ID | Purchase_Date | Product_Category | Rating | Feedback_Comments | Return_Request
-|---|---|---|
-| 001 | 2024-10-01 | Electronics | 5 | "Great product, fast delivery!" | No
-| 002 | Row 2, Col 2 | Row 2, Col 3 | Row 2, Col 4 | Row 2, Col 5 | Row 2, Col 6 |
-| 003 | Row 3, Col 3 | Row 3, Col 3 | Row 3, Col 4 | Row 3, Col 5 | Row 3, Col 6 |
-| 004 | Row 4, Col 2 | Row 4, Col 3 | Row 4, Col 4 | Row 4, Col 5 | Row 4, Col 6 |
-| 005 | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 | Row 5, Col 6 |
+|---|---|---|---|---|---|
+| 001 | 2024-10-01 | Electronics | 5 | "Great product, fast delivery!" | No |
+| 002 | 2024-10-05 | Apparel | 2 | "Size did not match the description." | Yes |
+| 003 | 2024-10-07 | Home Goods | 4 | "Quality is good, but color is off." | No |
+| 004 | 2024-10-10 | Electronics | 1 | "Item arrived damaged." | Yes |
+| 005 | 2024-10-12 | Beauty | 3 | "Average product, packaging was poor." | No |
 
 Data is often messy and incomplete. These imperfections can disort results, lead to inaccuracies, and complicate decision making.
 
@@ -194,12 +193,32 @@ Here, the **popularity score** is derived from survey data collected bt fans, re
 This **score serves as our feature** while the **ticket price for the artist's concert is the label we aim to predict**.
 To build this prediction model, we'll **use historical data that pairs popularity scores (x) with their corresponding tikcet prices (y) from past concerts**.
 
-# INSERT TABLE
+| Artist popularity (X) | Ticket Price (y)
+|---|---|
+| 35 | $45 |
+| 40 | $60 |
+| 45 | $55 |
+| 50 | $75 |
+| 55 | $65 |
+| 60 | $85 |
+| 65 | $100 |
+| 70 | $105 |
+| 75 | $115 |
+| 80 | $135 |
+| 85 | $140 |
+| 90 | $170 |
 
 Next, we will **split the data** and use a portion of it **to train the model**.
 In this case, the data was **split randomly to ensure a  balanced representation of the dataset**.
 
-## INSERT TABLE of data selected for training.
+| Artist popularity (X) | Ticket Price (y)
+|---|---|
+| 40 | $60 |
+| 50 | $75 |
+| 60 | $85 |
+| 70 | $105 |
+| 75 | $115 |
+| 80 | $135 |
 
 While random spliting is common approach, **there are other methods that can be used based on the scenario**:
 
@@ -230,7 +249,14 @@ In this case, the price would be something like $120 based on the trend we've es
 The next step is to **evaluate the accuracy of this regression model**.
 Using the **training dataset**, we can **predict the ticket prices for each artist's popularity score**.
 
-## INSERT TABLE of predicted ticket price
+| Artist popularity (X) | Actual ticket price (y) | Predicted ticket price  (ŷ) |
+|---|---|---|
+| 35 | $45 | $50 |
+| 45 | $55 | $60 |
+| 55 | $65 | $70 |
+| 65 | $100 | $85 |
+| 80 | $135 | $120 |
+| 90 | $170 | $140 |  
 
 We can then plot these values on a chart.
 
@@ -299,7 +325,14 @@ All of these metrics are certainly helpful. But in real-world scenarios, ML isn'
 
 After several rounds of this iterative process, you'll settle on the version of the model that performs best for your specific problem.
 
-## INSERT TABLE 4-5
+Let's sum up what we have learned about regression analysis
+
+| Factors | Description |
+|---|---|
+| Purpose | To predict a numeric outcome label based on one or more predictor features by identifying patterns in historical data |
+| Process | 1. Split data into training and testing sets. 2. Train the model to identify relationships. 3. Test the model to make predictions. 4. Evaluate model accuracy and refine if needed|
+| Training the model | Uses an algorithm, such as linear regression, to analyze patterns in the training data, establishing a predictive relationship between the independent and dependent variables |
+| Evaluation metrics | - MAE: Measures average prediction error without considering direction (over/under-estimate) - MSE: Empahsizes larger errors by squaring them - RMSE: Provide the error in original measurement units - R² (coefficient of determination): Indicates the model's explanatory power, with values closer to 1 suggesting a better fit |
 
 ## Classification
 
@@ -322,4 +355,43 @@ The **model looks at the features of the data** you provide, such as email conte
 Based on this probability, it then makes a final classification.
 
 Let's walk through a simple example to show how binary classification works.
-Imagine we want to predict whether a person will default on a loan using one feature: their credit score
+Imagine we want to predict whether a person will default on a loan using one feature: their credit score (x).
+Our goal is to classify them into one of the two categories: either they default (y = 1) or they don't (y = 0).
+The model will learn from the data in the table below to make predictions
+
+| Credit score (x) | Default (y) |
+|---|---|
+| 580 | 1 |
+| 720 | 0 |
+| 610 | 1 |
+| 750 | 0 |
+| 590 | 1 |
+| 800 | 0 |
+
+Based on the patterns in the training data, the model will eventually predict whether someone is likely to defauly or not.
+As you can see, it's about using past information to make a binary choice.
+In our example, people with a credit score of 610 or lower are predicted to default while anyone with a score of 720 or higher is predicted not to default.
+
+To train our model, we'll use an algorithm that analyzes the training data and fits it to a function that calculates the probaility of a person defaulting on a loan.
+For example, if the model predicts a probability of 0.8 for default, that means there's an 80% chance the person will default and a 20% chance they won't.
+
+There are several algorithms that handle binary classification, but *logisitic regression* is a common choice. **Logistic regresssion gives us an S-Shaped curve, called a *sigmoid function*, that assigns values between 0 and 1 based on the input data** and shown in the figure below.
+Even though its name includes *regression*, **the logistic regression algorithm is used for classification because it models the probability of different outcomes**. This is a common topic for the exam.
+
+![Logistic Regression: Probability of Default by Credit Score figure from book](/assets/images/ML-classification.png)
+
+In this case, the curve shows the probability that someone will defauly (y = 1) based on their credit score (x).
+Mathematically, the model's function can be represented like this:
+
+f(x) = P(y = 1 | x)
+
+Note that for the exam, you will not have to memorize equations.
+They are used in this book as a better way to help you understand the concepts.
+
+For some people in the training data, we already know they defaulted (y = 1), so the probabilty for them is 1.0.
+For others who didn't default, the probability is 0.0.
+The sigmoid curve visually shows how the likelihood of default changes as credit scores increase.
+
+In the figure, the dashed line at 0.5 serves as the treshold for our model's predictions. When the calculated probability is at or above 0.5, the model predicts that the person will default (y = 1).
+If the probability falls below 0.5, the prediction is that they won't default (y = 0).
+For instance, if someon
