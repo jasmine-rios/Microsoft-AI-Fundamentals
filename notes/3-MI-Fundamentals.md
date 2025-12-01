@@ -456,4 +456,16 @@ These labels offer a clearer understanding of the relationship between predicted
 - False Positive (FP)
     The model predicted the positive class, but the actual class was negative. This is an incorrect prediction, known as a *type I error*.
 
--
+- False negative (FN)
+    The model predicted the negative class, but the actual class was positive.
+    This is another prediction, known as a type II error.
+
+- True negative (TN)
+    The model predicted the negative class, and the actual class was also negative.
+    This is a correct prediction for the negative class.
+
+Calling this a *confusion matrix* is certainly apt: it can be tough to understand this.
+Yet this is on the exam... 🥲
+So memorize the four outcomes.
+
+Let's now take a look at other common evaluation metrics
