@@ -394,4 +394,66 @@ The sigmoid curve visually shows how the likelihood of default changes as credit
 
 In the figure, the dashed line at 0.5 serves as the treshold for our model's predictions. When the calculated probability is at or above 0.5, the model predicts that the person will default (y = 1).
 If the probability falls below 0.5, the prediction is that they won't default (y = 0).
-For instance, if someon
+For instance, if someone has a credit score of 580, and the model assigns a 0.9 proability of default. that's well above the threshold, meaning the model would predict this person is likely to default.
+
+Just like with regression models, when you train a binary classification model, it's essential to hold back a set of data to validate how well the model performs.
+Let's say we kept the credit score data in the table aside to validate our model predictiong loan defaults, Note: The credit score values shown in the table below are normalized for demonstration purposes and do not reflect actual credit score ranges.
+
+| Credit score (x) | Default? (y) |
+|---|---|
+| 62| 0 |
+| 108 | 1 |
+| 113 | 1 |
+| 70 | 0 |
+| 88 | 1 |
+| 91 | 1 |
+
+We can apply the logistic function we trained earlier to these values, which you can see in the figure below
+
+![A sigmoid function used to evaluate a binary ](/assets/images/ML-credit-threshold.png)
+
+Based on whether the calculated probability is above or below the threshold (usually 0.5), the model will predict either a defauly (1) or no default (0) for each credit score.
+We can then compare the predicted defaults (ŷ) to the actual defaults (y), shown in the table below
+
+| Credit score (x) | Default? (y) | predicted defaults (ŷ)
+|---|---|---|
+| 62| 0 | 0 |
+| 108 | 1 | 1 |
+| 113 | 1 | 1 |
+| 70 | 0 | 0 |
+| 88 | 1 | 0 |
+| 91 | 1 | 1 |
+
+This comparison helps us see where the model is getting it right and where it might need improvement.
+
+### Evaluation Metrics for Binary Classification
+
+The first step in calculating evaluation metrics for a binary classification model is usually to create a *confusion matrix* of the number of correct and incorrect predictions for each possible class label as you see in the table below:
+
+| | Positive | Negative | 
+|---|---|---|
+| Positive | 30 | 45 |
+| Negative | 20 | 19 |
+
+The rows represent the actual values, labeled as "positive" or "negative", while the columns show the predicted values.
+For example, **the model predicted the positive class correctly 30 times**, which is displayed as the true positive count.
+However, it also made **45 incorrect predictions where it classified negatives as positives**.
+Simarly, there are **20 instances of false negatives and 19 true negatives.**
+This distrubution helps evaluate the accuracy and types of errors in the model's predictions.
+One way to express the different possibilities for the confusion matrix is shown below
+
+| | Predicted Positive | Predicted Negative | 
+|---|---|---|
+| Actual Positive | True positive | False negative |
+| Actual Negative | False postive | True negative |
+
+The rows and columns follow the same arrangement, but **each cell now includes a label: true positive, false positive, false negative, and true negative**.
+These labels offer a clearer understanding of the relationship between predicted and actual outcomes:
+
+- True Postitive (TP)
+    The model predicted the positive class, and the actual class was also positive. This a correct prediction for the positive class.
+
+- False Positive (FP)
+    The model predicted the positive class, but the actual class was negative. This is an incorrect prediction, known as a *type I error*.
+
+-
