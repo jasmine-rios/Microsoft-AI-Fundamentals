@@ -1,0 +1,45 @@
+# Chapter 6 Features of Computer Vision Workloads on Azure
+
+This technology enables you to harness Microsoft Azure's suite of tools designed to **"see" and interpret the world through data**.
+We'll start with an overview of key computer vision solutions, techniques, and foundational concepts.
+Then we'll dive into how Azure approaches **image classification, object detection, OCR, and facial analysis**.
+We'll examine these topics in greater depth, incorporating hands-on examples along the way.
+
+## Computer Vision Serives for Azure
+
+When you're diving into computer vision on Azure, you've got several options to explore, each catering to different goals and levels of customization:
+
+Azure AI Vision
+    If your focus is only on computer vision, Azure AI Vision is built precisely for that.
+    It's got all the tools you need to **handle visual data, analyze images and videos, and pull useful insights**.
+    Let's say you're developing a system for a parking garage that needs to track avaliable spaces and detect unauthorized vehicles through camara feeds.
+    Azure AI Vision gives you a dedicated, powerful toolkit to tackle visual processing tasks like these with options to help you manage your budget along the way
+
+Azure AI services
+    If you're interested in **tapping into multiple AI capabilities beyond computer vision--translation or search**, for example--Azure AI services is your go-to.
+    Think of it as a one-stop shop for various AI tools.
+    You manage everything with a **single endpoint and access key**.
+    This setup will save time.
+    For instance, imagine you're building a travel app that **translates text, tags images, and detects landmarks.
+    Azure AI Service lets your combine all these features**.
+    This keeps everything streamlined and simple to manage
+
+Azure AI Custom Vision
+    When you neeed **tailored image recognitition capabilities**, Azure AI Custom Vision is your go-to solution.
+    It empowers you to create and train **custom image recognition models using tags specific to your project's needs**.
+    For instance, if you're in agriculture, you could build a model to identify crop diaseses from images, helping farmers take proactive measures and improve yields.
+    **Custom Vision is accessible via SDKs, an API, or an intutive web portal.**
+
+Azure AI Face Service
+    This service provides advanced AI algorithns to **detect, recognize, and analyze human faces in images**-- even if someone is wearing sunglasses or viewed from an angle.
+    It's an excellent tool if your projects require **identity verification, touchless access control, or automated face blurring for privacy in public spaces**.
+    The service can return **detailed facial analysis**, which makes it useful for applications where in-depth facial recognition is needed.
+    However, access is restricted: **only Microsoft-managed customers and partners meeting specific eligibility and usage criteria can use the service as part of Microsoft's responsible AI principles**. To apply, interested users must complete the Face Recognition intake form.
+
+Azure AI Video Indexer
+    This tool allows for extracting insights from videos, such as **object detection, OCR, and content moderation**.
+    This is done by leveraging more than 30 AI models.
+    There are also audio capabilities, such as **transcription, translation, and emotion detection**.
+
+
+

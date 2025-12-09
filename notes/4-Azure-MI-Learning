@@ -44,4 +44,22 @@ When you're ready to get started, **the first step is to set up an Azure Machine
 This workspace is your main resourcem and other resources like storage accounts and VMs are created automatically as needed.
 
 Once your workspace is ready, you can access it through Azure Machine Learning Studio, a browser-based tool that helps you manage everything from data to deployment models.
-In the studio, you can
+In the studio, you can:
+
+- Import and explore your data
+- Create and manage compute resources
+- Run your code in notebooks
+- Build jobs and pipelines using visual tools
+- Train models with automated ML
+- View model details like evaluation metrics and responsible AI information
+- Deploy models for **real-time or batch inferencing**
+- Manage models from a comprehensive catalog
+
+In the next two sections we'll look into how to use Azure Machine Learnning's AutoML and Azure Machine Learning Designer services.
+
+## AutoML
+
+We'll dive into AutoML service to train and test an ML model.
+This will be for a cost prediction system for health care insurance.
+
+Please see book-labs chapter-5-AutoML for the lab.
