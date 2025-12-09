@@ -1,4 +1,134 @@
 # Chapter 7: Features of Natural Language Processing Workloads in Azure.
 
-We will kick things off with an exploration of core NLP principals.
-Then, we'll get into Microsoft Azure services for NLP, starting with key phrase extraction and how entity recognition pulls important context 
+## Introduction to NLP
+
+Imagine trying to get your computer to not just read but actually understand what you're saying--that's where NLP steps in.
+NLP is part of AI that gives machines the power to **intepret and generate human languauge**.
+It's about taking apart the complexities of text and speech and transforming them into something a computer can work with.
+This is what fuels everything from the search resultys you see on Google to chatbots to generative AI apps like ChatGPT that answer questions and voice-activated assistants that talk back.
+By bridging the gap between human communication and computer logic, NLP makes technology feel more intutive--almost like it's listening.
+
+NLP doesn't work alone--it's **backed by two powerful AI systems: machine learning (ML) and deep learning (DL)**.
+ML gives NLP systems the models and algorithms they need to spot patterns and make predictions.
+DL takes this a step further, allowing NLP to **tackle complex tasks like understanding the context of conversation or gauging sentiment**.
+**DL models mimic the brain's structure, giving NLP systems a real boost in "thinking" more like us.**
+And because ML and DL help NLP keep learning from new data, these systems keep getting better at handling language naturally
+
+You'll see NLP in action in three main ways:
+
+- Language processing
+- Speech Recognition
+- Translation
+
+In language processing, NLP can do things like sentiment analysis, which is how it picks up on emotion in text, or entity recognition, where it identifies specific names or places within content.
+Then there's speech recognition and synthesis: those technologies that allow your virtual assistants to understand and respond when you speak.
+And, of course, NLP powers translation tools, breaking down language barriers so that people from different parts of the world can connect easily.
+
+### Tokenization
+
+*Tokenization* is about **breaking down words and parts of words into numbers**, which are known as *tokens*.
+This is the first step in the NLP process.
+It provides the **framework for identifying the words** or phrases that NLP models need to analyze, classify, or respond to.
+
+Let's take an example.
+Suppose we have this sentence:
+
+Time flies like an arrow, time flies fast.
+
+When we tokenize this sentence, each word (or token) is given an identifier.
+Because the words time and flies repeat, they get **only one token ID even though they appear twice**.
+Here's how it breaks down:
+
+1. time
+2. flies
+3. like
+4. an
+5. arrow
+6. fast
+
+So our sentence becomes a sequence of tokens: [1, 2, 3, 4, 5, 1, 2, 6]-- that is, there are eight words but six tokens.
+
+Without tokenization, a computer would see the sentence as one continous string of characters, which isn't useful for analysis.
+Breaking it down allows the NLP model to interpret each part separately and understand how they work together.
+
+Here are some other considerations in tokenization:
+
+Text normalization
+    Before tokenizing, the text might be normalized.
+    This usually means **converting everything to lowercase and removing punctuation**.
+    In our example, normalization would return "Time flies like an arrow, time flies fast" into "time flies like an arrow time flies fast".
+    Normalization helps simplify the processing, although sometimes specific details like capitalization or punctuation are neccesary.
+    For instnace, "Dr. Johnson" and "dr" convey very different meanings in a medical context where "Dr." indicates a title.
+
+Stop-word removal
+    Words like ***the*, *an*, or *and***are common in most sentences but don't always add useful meaning.
+    By removing these stop words, NLP systems can **emphasize the core content**.
+    For our sentence, if we remmove *like* and *an*, we're left with "time flies arrow time flies fast", which directs more attention to the essential words.
+
+N-grams
+    Sometimes, instead of breaking a sentence down to single words, NLP models **capture phrases** (such as bigrams for two words or trigrams for three).
+    For example, "time flies" could be treated as a bigram to capture a specific phrase **instead of treating "time" and "flies" as sepreate tokens**.
+    This can preserve important context, as in the case of "New York City", which, if split, might lose its meaning.
+
+Stemming
+    To make analysis clearer, **similar words are often grouped together**.
+    For example, *flying*, *flew*, and *flies* could be treated as the root form *fly*.
+    In our example, both instances of *flies* would link back to the base *fly* token, making it easier to analyze related concepts together.
+
+Lemmatization
+    This **reduces words to their base form, or lemma, so that different versions of a word--such as *running*, *ran*, and *runs*-- akk map back to a single, consistent root form: run**.
+    Unlike simple stemming, which just chops off endings, **lemmatization applies linguistic rules to ensure the base form is more meaningful and grammatically accurate**.
+    This process makes text analysis more precise by grouping related words.
+
+### Frequency Analysis
+
+Once you've tokenizated the words, the **next step is *frequency analysis*: examining how frequently each word appears**.
+The most common words (ignoring basics like *a*, *the*, and similar words) can hint at the main theme of the text.
+Take a political speech about economic growth, for example: the **most frequent words might include *growth*, *jobs*, *future*, and *economy***.
+**If we look at the word pairs (bigrams), a common pair might be "new jobs", which points to the focus on employment and economic expansion**.
+
+Counting word occurrences, known as *frequency analysis*, works well for examining a single documenet. But when you're working with multiple documents, you need a way to pinpoint the most relevent words in each one.
+That's where *term frequency-inverse document frequency (TF-IDF)* comes in.
+This method scores words by how often they appear in a document compared to the entire set of documents.
+Words that appear often in one document but are rare in the others stand out as especially relevent.
+
+Here are some additional considerations in frequency analysis:
+
+*Limitations of simple frequency analysis*
+    While simple frequency or bigram analysis offers helpful initial insights.
+    It can miss nuances or context.
+    Frequency used words may not always indicate the main topic, especially if they're general or if they depend on context.
+    **When analyzing complex or larger documents, more advanced methods like TF-IDF, latent Dirichlet allocation (LDA), or other topic-modeling techniques are often more insightful.*LDA* is a statistical model that identifies topics in a collection or documents by finding groups of words that frequently appear together.**
+    This helps to uncover underlying themes or subjects, making it easier to analyze and categorize large amounts of text.
+
+*Broader uses of TF-IDF*
+    TF-IDF isn't just for finding relevany words--it's also used in similarity analysis to **group related documents,** making it a powerful tool for tasks like information retrival and recommendation systems.
+
+*Advanced contextual models*
+    For even more refined insights, techniques like **word2vec, BERT (bidirectional encoder representations from transformers)** or other **contextual embeddings consider each word's meaning based on surronding text**, which brings greater clarity to themes across a document and improves tasks like **summarization, sentiment anaylsis, and topic detection**.
+
+### Text Classification
+
+Another powerful way to analyze text is by using a classification algorithm, like **logitic regression to catergorize it based on predefined labels, which is called *text classification***.
+A common application for this is sorting social media posts for sentiment analysis.
+
+Let's say you're working with social media comments that are already labeled as either 0 (critical) or 1 (supportive):
+
+- "This initiative is exactly what we need!" = 1
+- "Totally dissapointed with the results so far" = 0
+- "Great job! Keep it up!" = 1
+- "This approach misses the point entirely" = 0
+
+With enough labeled examples, you can train a **classification model that learns to distinguish between supportive and critical posts**.
+**Using the tokenized text as features and the sentiment label (0 or 1)**, the model starts to detect patterns.
+For instance, comments with words like *great*, *exactly*, or *job* tned to be supportive while words like *dissapointed* or *misses* indicate critism.
+
+To make this work, you'll need to **convert words into numbers**.
+Basic methods like the bag-of-words model and TF-IDF score word importance based on frequency while advanced embeddings like word2vec or GloVe capture meaning based on context.
+
+
+
+
+
+
+
