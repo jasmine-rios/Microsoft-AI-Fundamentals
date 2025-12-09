@@ -472,3 +472,14 @@ Yet this is on the exam... 🥲
 So memorize the four outcomes.
 
 Let's now take a look at other common evaluation metrics
+
+#### Accuracy
+
+One basic metric derived from the confusion matrix is accuracy, which is simply the proportion of correct predictions out of the total. It's calculated as:
+
+Accuracy = (TP +TN) / (TN+FN+FP+TP)
+
+For our credit score example, the calculations is:
+
+(2+3) / (2+1+0+3) = 5 / 6 = 0.83
+

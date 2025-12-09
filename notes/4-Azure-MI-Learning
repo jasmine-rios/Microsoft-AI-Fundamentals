@@ -1,0 +1,47 @@
+# Chapter 5 Azure Machine Learning
+
+We will apply the concepts from last chapter using *Azure Machine Learning*, a cloud-based service that facilitates the training, deployment, and mangement of ML models.
+
+Azure Machine Learning streamlines the entire ML workflow, from data exploration to model deployment.
+
+Azure Machine Learning offers two primary tools tailorred to different user preferences and objectives:
+
+Azure Automated Machine Learning (AutoML)
+    AutoML **automates the process of developing ML** models, handling tasks such as algorithm selection and hyperparamater tuning.
+    It is accessible through both the Azure Machine Learning Studio's **no-code interface and the Python SDK**. 
+    This means the system can cater to varying levels of expertise.
+
+Azure Machine Learning Designer
+    This tool provides a drag-and-drop interface for constructing ML pipelines without the need for coding.
+    Users can visually connect datasets, transformations, and algorithms to create and deploy models efficiently.
+
+Both tools are integrated into Azure Machine Learning Studio, offering flexibility based on user preferences and project requirements.
+For this chapter, we'll provide examples of using these services.
+
+## Introduction to Azure Machine Learning
+
+You can use Azure Machine Learning for tasks like:
+
+- Preparing and exploring your data
+- Training and evaluating ML models
+- Registering and managing models once they're trained
+- Deploying models so that applications or services can use them
+- Ensuring the responsible AI practices are followed
+
+Azure Machine Learning is designed to **work with various ML platforms**, whether you're using Microsoft Azure's tools or open source frameworks like PyTorch, TensorFlow, or scikit-learn.
+MLOps tools make it easy to monitor your models and redeploy them as needed.
+
+Here's what Azure Machine Learning offers:
+
+- **Centeralized dataset storage for model training and evaluation**
+- **On-demand compute power to run ML jobs** like training models
+- AutoML to **test different algorithms and **parameters** so that **you can find the best model for your data**
+- Visual tolls that help you create **pipelines** for processess like **model training or inferencing**
+- Integration with popular tools like **MLflow for managing your models at scale**
+- Built-in support for evaluating **responsible AI metrics**, including fairness and model explainability
+
+When you're ready to get started, **the first step is to set up an Azure Machine Learning workpace** in your Microsoft Azure subscription.
+This workspace is your main resourcem and other resources like storage accounts and VMs are created automatically as needed.
+
+Once your workspace is ready, you can access it through Azure Machine Learning Studio, a browser-based tool that helps you manage everything from data to deployment models.
+In the studio, you can
