@@ -39,5 +39,4 @@ If you take AI-900 or other Microsoft certification is eligable for college cred
 
 - **Bold**
     Shows commands or other text that should be typed literally by the user
-
-- [Markdown for Tech Writing](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#uploading-assets)
+    Also used in text for foot stomp moments
