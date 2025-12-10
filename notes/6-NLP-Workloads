@@ -125,6 +125,18 @@ For instance, comments with words like *great*, *exactly*, or *job* tned to be s
 
 To make this work, you'll need to **convert words into numbers**.
 Basic methods like the bag-of-words model and TF-IDF score word importance based on frequency while advanced embeddings like word2vec or GloVe capture meaning based on context.
+Logistic regression is a good starting point, but other algorithms like naive Bayes and support vector machine (SVM), DL models like recurrent neural networks (RNNs), or transformers can boost performance, especially for larger datasets or nuanced content.
+
+**To ensure your model is effective, evaluate it with metrics like accuracy, precision, recall, and the F1 score**, which reveal how well the model generalizes new data.
+Just keep in mind that models can **struggle with subtleties like sarcasm**.
+For example, a comment like "Love the effort...the result is certainly something" could be misinterpreted as supportive.
+
+Classification models have plenty of uses beyond sorting social media sentiment, such as **tagging news articles by category** (e.g. "politics", "entertainment", or "health") or even spotting trending topics--showing just how versatile text classification can be.
+
+### Semantic Language Models
+
+In the world of NLP, models have come a long way, making it possible to capture the deep and subtle relationships between words.
+The secret sause is embeddings--especially multidimensional number arrays 
 
 
 
